@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		BF5F7C2A1ADF1ACE008E2E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F7C291ADF1ACE008E2E68 /* AppDelegate.swift */; };
-		BF5F7C2C1ADF1ACE008E2E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F7C2B1ADF1ACE008E2E68 /* ViewController.swift */; };
 		BF5F7C2F1ADF1ACE008E2E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5F7C2D1ADF1ACE008E2E68 /* Main.storyboard */; };
 		BF5F7C311ADF1ACE008E2E68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5F7C301ADF1ACE008E2E68 /* Images.xcassets */; };
 		BF5F7C341ADF1ACE008E2E68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5F7C321ADF1ACE008E2E68 /* LaunchScreen.xib */; };
 		BF5F7C401ADF1ACE008E2E68 /* MatheusAlbertonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F7C3F1ADF1ACE008E2E68 /* MatheusAlbertonTests.swift */; };
+		BF5F7C4E1ADF3C96008E2E68 /* WhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F7C4D1ADF3C96008E2E68 /* WhoViewController.swift */; };
+		BF5F7C521ADF40EC008E2E68 /* DevelopmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F7C511ADF40EC008E2E68 /* DevelopmentTableViewController.swift */; };
+		BF5F7C541ADF41FB008E2E68 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F7C531ADF41FB008E2E68 /* ContactViewController.swift */; };
+		BFB6F8E91ADF4B4B00FBEC59 /* LifeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6F8E81ADF4B4B00FBEC59 /* LifeTableViewCell.swift */; };
+		BFB6F8EB1ADF561600FBEC59 /* LifeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6F8EA1ADF561600FBEC59 /* LifeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,17 @@
 		BF5F7C241ADF1ACE008E2E68 /* MatheusAlberton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatheusAlberton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5F7C281ADF1ACE008E2E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF5F7C291ADF1ACE008E2E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF5F7C2B1ADF1ACE008E2E68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF5F7C2E1ADF1ACE008E2E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF5F7C301ADF1ACE008E2E68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF5F7C331ADF1ACE008E2E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BF5F7C391ADF1ACE008E2E68 /* MatheusAlbertonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatheusAlbertonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5F7C3E1ADF1ACE008E2E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF5F7C3F1ADF1ACE008E2E68 /* MatheusAlbertonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatheusAlbertonTests.swift; sourceTree = "<group>"; };
+		BF5F7C4D1ADF3C96008E2E68 /* WhoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhoViewController.swift; sourceTree = "<group>"; };
+		BF5F7C511ADF40EC008E2E68 /* DevelopmentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevelopmentTableViewController.swift; sourceTree = "<group>"; };
+		BF5F7C531ADF41FB008E2E68 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		BFB6F8E81ADF4B4B00FBEC59 /* LifeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeTableViewCell.swift; sourceTree = "<group>"; };
+		BFB6F8EA1ADF561600FBEC59 /* LifeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				BF5F7C291ADF1ACE008E2E68 /* AppDelegate.swift */,
-				BF5F7C2B1ADF1ACE008E2E68 /* ViewController.swift */,
-				BF5F7C2D1ADF1ACE008E2E68 /* Main.storyboard */,
 				BF5F7C301ADF1ACE008E2E68 /* Images.xcassets */,
-				BF5F7C321ADF1ACE008E2E68 /* LaunchScreen.xib */,
+				BF5F7C4C1ADF1AF6008E2E68 /* Model */,
+				BF5F7C4B1ADF1AF0008E2E68 /* View */,
+				BF5F7C4A1ADF1AE7008E2E68 /* Controller */,
 				BF5F7C271ADF1ACE008E2E68 /* Supporting Files */,
 			);
 			path = MatheusAlberton;
@@ -110,6 +118,34 @@
 				BF5F7C3E1ADF1ACE008E2E68 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF5F7C4A1ADF1AE7008E2E68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF5F7C4D1ADF3C96008E2E68 /* WhoViewController.swift */,
+				BFB6F8E81ADF4B4B00FBEC59 /* LifeTableViewCell.swift */,
+				BF5F7C511ADF40EC008E2E68 /* DevelopmentTableViewController.swift */,
+				BF5F7C531ADF41FB008E2E68 /* ContactViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BF5F7C4B1ADF1AF0008E2E68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF5F7C321ADF1ACE008E2E68 /* LaunchScreen.xib */,
+				BF5F7C2D1ADF1ACE008E2E68 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BF5F7C4C1ADF1AF6008E2E68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFB6F8EA1ADF561600FBEC59 /* LifeManager.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5F7C2C1ADF1ACE008E2E68 /* ViewController.swift in Sources */,
 				BF5F7C2A1ADF1ACE008E2E68 /* AppDelegate.swift in Sources */,
+				BF5F7C521ADF40EC008E2E68 /* DevelopmentTableViewController.swift in Sources */,
+				BFB6F8E91ADF4B4B00FBEC59 /* LifeTableViewCell.swift in Sources */,
+				BF5F7C4E1ADF3C96008E2E68 /* WhoViewController.swift in Sources */,
+				BF5F7C541ADF41FB008E2E68 /* ContactViewController.swift in Sources */,
+				BFB6F8EB1ADF561600FBEC59 /* LifeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +451,7 @@
 				BF5F7C451ADF1ACE008E2E68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF5F7C461ADF1ACE008E2E68 /* Build configuration list for PBXNativeTarget "MatheusAlbertonTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +460,7 @@
 				BF5F7C481ADF1ACE008E2E68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
