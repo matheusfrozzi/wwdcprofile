@@ -15,9 +15,7 @@ class DevelopmentTableViewController: UITableViewController {
     }
 
     override func viewWillAppear(animated: Bool) {
-        let color = UIColor(red: 81.0/255.0, green: 165.0/255.0, blue: 157.0/255.0, alpha: 1.0)
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: color], forState:.Selected)
-        UITabBar.appearance().tintColor = color
+        self.navigationController?.navigationBarHidden = false;
     }
 
     override func didReceiveMemoryWarning() {

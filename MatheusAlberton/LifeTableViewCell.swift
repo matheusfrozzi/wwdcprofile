@@ -10,23 +10,18 @@ import UIKit
 
 class LifeTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var titleLife: UILabel!
     @IBOutlet weak var descriptionLife: UILabel!
-    @IBOutlet weak var yearLife: UILabel!
-    @IBOutlet weak var imageLife: UIImageView!
+    @IBOutlet weak var skillsTitle: UILabel!
     @IBOutlet weak var newSkills: UILabel!
-    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var lineCell: UIView!
+    @IBOutlet weak var descriptionHeader: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }
