@@ -35,7 +35,7 @@ class ContactViewController: UIViewController {
     }
 
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "About me"
+        return "Contact Me"
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -48,6 +48,9 @@ class ContactViewController: UIViewController {
             
             cell.contactName.text = contactClass.nameContact
             cell.contactImage.image = UIImage(named:contactClass.imageIcon!)
+            
+            cell.contactImage.layer.cornerRadius = cell.contactImage.frame.size.width / 2;
+            cell.contactImage.clipsToBounds = true;
         } else {
             cell = tableView.dequeueReusableCellWithIdentifier("cellContacts") as! ContactTableViewCell
             

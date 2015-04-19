@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -15,20 +15,20 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o8o-z9-8hL">
-                            <rect key="frame" x="260" y="10" width="80" height="80"/>
+                            <rect key="frame" x="260" y="-10" width="80" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="o8o-z9-8hL" secondAttribute="height" multiplier="1:1" id="gvA-NR-gdF"/>
                                 <constraint firstAttribute="width" constant="80" id="mEv-G6-iuc"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqu-wv-o90">
-                            <rect key="frame" x="8" y="40" width="244" height="20"/>
+                            <rect key="frame" x="-80" y="40" width="252" height="20"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooA-Zp-iqs">
-                            <rect key="frame" x="348" y="43" width="24" height="14"/>
+                            <rect key="frame" x="428" y="43" width="24" height="14"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -36,15 +36,25 @@
                     </subviews>
                     <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="o8o-z9-8hL" firstAttribute="top" secondItem="H18-RN-c7z" secondAttribute="top" constant="-10" id="1b2-Ad-8jp"/>
                         <constraint firstAttribute="centerY" secondItem="o8o-z9-8hL" secondAttribute="centerY" id="7YZ-PH-gyM"/>
                         <constraint firstAttribute="height" constant="100" id="FYs-kc-oPo"/>
                         <constraint firstAttribute="centerX" secondItem="o8o-z9-8hL" secondAttribute="centerX" id="Ic5-cc-vog"/>
-                        <constraint firstItem="Tqu-wv-o90" firstAttribute="leading" secondItem="H18-RN-c7z" secondAttribute="leading" constant="8" id="KPl-B0-E7z"/>
-                        <constraint firstItem="o8o-z9-8hL" firstAttribute="leading" secondItem="Tqu-wv-o90" secondAttribute="trailing" constant="8" id="ika-uN-DEc"/>
+                        <constraint firstItem="Tqu-wv-o90" firstAttribute="leading" secondItem="H18-RN-c7z" secondAttribute="leading" constant="-80" id="KPl-B0-E7z"/>
+                        <constraint firstAttribute="centerY" secondItem="Tqu-wv-o90" secondAttribute="centerY" id="QZX-LQ-4hy"/>
+                        <constraint firstAttribute="centerY" secondItem="ooA-Zp-iqs" secondAttribute="centerY" id="b6G-Qo-WeJ"/>
+                        <constraint firstItem="o8o-z9-8hL" firstAttribute="leading" secondItem="Tqu-wv-o90" secondAttribute="trailing" constant="88" id="ika-uN-DEc"/>
                         <constraint firstItem="Tqu-wv-o90" firstAttribute="centerY" secondItem="o8o-z9-8hL" secondAttribute="centerY" id="kBf-Og-YKs"/>
-                        <constraint firstItem="ooA-Zp-iqs" firstAttribute="leading" secondItem="o8o-z9-8hL" secondAttribute="trailing" constant="8" id="uu8-7F-z4F"/>
+                        <constraint firstItem="ooA-Zp-iqs" firstAttribute="leading" secondItem="o8o-z9-8hL" secondAttribute="trailing" constant="88" id="uu8-7F-z4F"/>
                         <constraint firstItem="ooA-Zp-iqs" firstAttribute="centerY" secondItem="o8o-z9-8hL" secondAttribute="centerY" id="wLr-Tj-ine"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="kBf-Og-YKs"/>
+                            <exclude reference="7YZ-PH-gyM"/>
+                            <exclude reference="wLr-Tj-ine"/>
+                        </mask>
+                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
