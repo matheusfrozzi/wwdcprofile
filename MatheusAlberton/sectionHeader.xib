@@ -22,7 +22,7 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqu-wv-o90">
-                            <rect key="frame" x="-80" y="40" width="252" height="20"/>
+                            <rect key="frame" x="-75" y="40" width="247" height="20"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                         <constraint firstAttribute="centerY" secondItem="o8o-z9-8hL" secondAttribute="centerY" id="7YZ-PH-gyM"/>
                         <constraint firstAttribute="height" constant="100" id="FYs-kc-oPo"/>
                         <constraint firstAttribute="centerX" secondItem="o8o-z9-8hL" secondAttribute="centerX" id="Ic5-cc-vog"/>
-                        <constraint firstItem="Tqu-wv-o90" firstAttribute="leading" secondItem="H18-RN-c7z" secondAttribute="leading" constant="-80" id="KPl-B0-E7z"/>
+                        <constraint firstItem="Tqu-wv-o90" firstAttribute="leading" secondItem="H18-RN-c7z" secondAttribute="leading" constant="-75" id="KPl-B0-E7z"/>
                         <constraint firstAttribute="centerY" secondItem="Tqu-wv-o90" secondAttribute="centerY" id="QZX-LQ-4hy"/>
                         <constraint firstAttribute="centerY" secondItem="ooA-Zp-iqs" secondAttribute="centerY" id="b6G-Qo-WeJ"/>
                         <constraint firstItem="o8o-z9-8hL" firstAttribute="leading" secondItem="Tqu-wv-o90" secondAttribute="trailing" constant="88" id="ika-uN-DEc"/>

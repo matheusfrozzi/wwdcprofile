@@ -71,10 +71,13 @@ class ContactViewController: UIViewController {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let contactClass = ContactManager(dictionary: contacts[indexPath.row] as! NSDictionary)
 
-        UIApplication.sharedApplication().openURL(NSURL(string: contactClass.urlContact!)!)
-//        UIApplication.sharedApplication().openURL(NSURL(string: "tel://9809088798"))
-//        let url = NSURL(string: "mailto:\(contactClass.urlContact)")
-//        UIApplication.sharedApplication().openURL(url)
+        if(indexPath.row == 1) {
+            UIApplication.sharedApplication().openURL(NSURL(string: "mailto:" + contactClass.urlContact!)!)
+        } else if(indexPath.row == 2) {
+            UIApplication.sharedApplication().openURL(NSURL(string: "tel://" + contactClass.urlContact!)!)
+        } else {
+            UIApplication.sharedApplication().openURL(NSURL(string: contactClass.urlContact!)!)
+        }
     }
 
     func insertData() {
@@ -84,7 +87,7 @@ class ContactViewController: UIViewController {
         var linkedin = ["Icon":"linkedin-icon","Name":"/matheusfrozzi", "Url":"https://br.linkedin.com/in/matheusfrozzi"]
         var instagram = ["Icon":"instagram-icon","Name":"/matheusgringo", "Url":"http://instagram.com/matheusgringo"]
         var mail = ["Icon":"mail-icon","Name":"matheusfrozzi@gmail.com", "Url":"matheusfrozzi@gmail.com"]
-        var phone = ["Icon":"phone-icon","Name":"+55 51 81745271", "Url":"+55 51 81745271"]
+        var phone = ["Icon":"phone-icon","Name":"+55 51 81745271", "Url":"+555181745271"]
         var github = ["Icon":"github-icon","Name":"/matheusfrozzi", "Url":"https://github.com/matheusfrozzi"]
         var bitbucket = ["Icon":"bitbucket-icon","Name":"/matheusfrozzi", "Url":"https://bitbucket.org/matheusfrozzi/"]
 

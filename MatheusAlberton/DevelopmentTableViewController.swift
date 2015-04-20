@@ -22,7 +22,6 @@ class DevelopmentTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
 
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 3
     }
@@ -34,5 +33,9 @@ class DevelopmentTableViewController: UITableViewController {
         else {
             return 1
         }
+    }
+    
+    @IBAction func viewAppButton(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/the-chosen-one/id977281030?mt=8")!)
     }
 }

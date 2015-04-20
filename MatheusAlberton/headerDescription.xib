@@ -14,37 +14,35 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSm-Gf-yHj">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4KB-bb-Lhq">
-                            <rect key="frame" x="260" y="10" width="80" height="80"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-image" translatesAutoresizingMaskIntoConstraints="NO" id="4KB-bb-Lhq">
+                            <rect key="frame" x="260" y="-10" width="80" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="8dr-h4-YBO"/>
                                 <constraint firstAttribute="width" secondItem="4KB-bb-Lhq" secondAttribute="height" multiplier="1:1" id="kJO-oc-CHc"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKr-ZV-T6y">
-                            <rect key="frame" x="16" y="98" width="568" height="20"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matheus Frozzi Alberton" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKr-ZV-T6y">
+                            <rect key="frame" x="130" y="98" width="180" height="20"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmi-OR-9jn">
-                            <rect key="frame" x="288" y="122" width="24" height="14"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmi-OR-9jn">
+                            <rect key="frame" x="357" y="122" width="47" height="14"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="centerX" secondItem="4KB-bb-Lhq" secondAttribute="centerX" id="05V-r3-jYu"/>
-                        <constraint firstItem="KKr-ZV-T6y" firstAttribute="centerX" secondItem="Wmi-OR-9jn" secondAttribute="centerX" id="CaD-Su-jG3"/>
-                        <constraint firstItem="KKr-ZV-T6y" firstAttribute="leading" secondItem="SSm-Gf-yHj" secondAttribute="leading" constant="16" id="CwT-ah-5bb"/>
                         <constraint firstAttribute="height" constant="150" id="Epn-Pp-d02"/>
-                        <constraint firstAttribute="trailing" secondItem="KKr-ZV-T6y" secondAttribute="trailing" constant="16" id="GHY-56-Mqi"/>
-                        <constraint firstItem="KKr-ZV-T6y" firstAttribute="centerX" secondItem="4KB-bb-Lhq" secondAttribute="centerX" id="bSI-tC-0XU"/>
-                        <constraint firstItem="4KB-bb-Lhq" firstAttribute="top" secondItem="SSm-Gf-yHj" secondAttribute="top" constant="10" id="eBv-xd-n0w"/>
-                        <constraint firstItem="Wmi-OR-9jn" firstAttribute="top" secondItem="KKr-ZV-T6y" secondAttribute="bottom" constant="4" id="u02-w8-eVv"/>
-                        <constraint firstItem="KKr-ZV-T6y" firstAttribute="top" secondItem="4KB-bb-Lhq" secondAttribute="bottom" constant="8" id="x0K-fd-e5R"/>
+                        <constraint firstItem="Wmi-OR-9jn" firstAttribute="centerX" secondItem="4KB-bb-Lhq" secondAttribute="centerX" constant="80" id="LTg-bu-4Xw"/>
+                        <constraint firstItem="KKr-ZV-T6y" firstAttribute="top" secondItem="SSm-Gf-yHj" secondAttribute="top" constant="98" id="bGh-1E-giZ"/>
+                        <constraint firstItem="KKr-ZV-T6y" firstAttribute="centerX" secondItem="4KB-bb-Lhq" secondAttribute="centerX" constant="-80" id="bSI-tC-0XU"/>
+                        <constraint firstItem="4KB-bb-Lhq" firstAttribute="top" secondItem="SSm-Gf-yHj" secondAttribute="top" constant="-10" id="eBv-xd-n0w"/>
+                        <constraint firstItem="Wmi-OR-9jn" firstAttribute="top" secondItem="KKr-ZV-T6y" secondAttribute="bottom" constant="4" id="eFB-td-6z0"/>
                     </constraints>
                 </view>
             </subviews>
@@ -61,4 +59,7 @@
             </connections>
         </view>
     </objects>
+    <resources>
+        <image name="profile-image" width="199" height="199"/>
+    </resources>
 </document>

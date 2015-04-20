@@ -22,31 +22,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="455" id="QN2-hQ-2sn" customClass="LifeTableViewCell" customModule="MatheusAlberton" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QN2-hQ-2sn" id="Vue-Me-9XG">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRU-Wf-FTx">
-                                                    <rect key="frame" x="8" y="218" width="584" height="19"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="centerX" secondItem="YRU-Wf-FTx" secondAttribute="centerX" id="c3B-2d-bDg"/>
-                                                <constraint firstAttribute="centerY" secondItem="YRU-Wf-FTx" secondAttribute="centerY" id="vKH-3Y-GLF"/>
-                                                <constraint firstItem="YRU-Wf-FTx" firstAttribute="trailing" secondItem="Vue-Me-9XG" secondAttribute="trailingMargin" id="vuN-hh-05N"/>
-                                                <constraint firstItem="YRU-Wf-FTx" firstAttribute="leading" secondItem="Vue-Me-9XG" secondAttribute="leadingMargin" id="yj0-RC-e0h"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <outlet property="descriptionHeader" destination="YRU-Wf-FTx" id="I6o-qu-BCh"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="lifeCell" rowHeight="373" id="6Ld-Vh-j7a" customClass="LifeTableViewCell" customModule="MatheusAlberton" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -59,7 +34,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-mP-2ce">
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-mP-2ce">
                                                     <rect key="frame" x="250" y="313" width="100" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-mK-KmI">
@@ -86,11 +61,20 @@
                                                         <constraint firstItem="eNy-mK-KmI" firstAttribute="leading" secondItem="wrS-um-VM5" secondAttribute="trailing" constant="8" id="yDP-bf-Hwg"/>
                                                     </constraints>
                                                 </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="CIw-bu-UVA">
+                                                    <rect key="frame" x="285" y="319" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="CIw-bu-UVA" secondAttribute="height" multiplier="1:1" id="IvU-0P-MS9"/>
+                                                        <constraint firstAttribute="width" constant="30" id="i6A-Ah-OlJ"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerX" secondItem="vyR-mP-2ce" secondAttribute="centerX" id="7Xk-AL-fYU"/>
                                                 <constraint firstItem="7Gd-O9-cWO" firstAttribute="leading" secondItem="8kI-9N-dUZ" secondAttribute="leadingMargin" id="8VL-Px-0KO"/>
+                                                <constraint firstAttribute="centerX" secondItem="CIw-bu-UVA" secondAttribute="centerX" id="DjO-6s-e0M"/>
                                                 <constraint firstItem="vyR-mP-2ce" firstAttribute="bottom" secondItem="8kI-9N-dUZ" secondAttribute="bottomMargin" constant="-8" id="SFc-cX-lDU"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="CIw-bu-UVA" secondAttribute="bottom" constant="16" id="TdH-z8-est"/>
                                                 <constraint firstAttribute="centerY" secondItem="7Gd-O9-cWO" secondAttribute="centerY" constant="50" id="V1J-XZ-kWI"/>
                                                 <constraint firstAttribute="centerX" secondItem="7Gd-O9-cWO" secondAttribute="centerX" id="fPk-Hq-Kir"/>
                                                 <constraint firstItem="7Gd-O9-cWO" firstAttribute="trailing" secondItem="8kI-9N-dUZ" secondAttribute="trailingMargin" id="m39-wZ-ir9"/>
@@ -105,6 +89,7 @@
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="arrowButton" destination="eNy-mK-KmI" id="G0N-5s-fHz"/>
+                                            <outlet property="arrowDown" destination="CIw-bu-UVA" id="2ex-wd-sUZ"/>
                                             <outlet property="descriptionLife" destination="7Gd-O9-cWO" id="B8p-sz-YKz"/>
                                             <outlet property="labelButton" destination="wrS-um-VM5" id="o5f-LF-1Xn"/>
                                             <outlet property="viewButton" destination="vyR-mP-2ce" id="8gP-AS-6c6"/>
@@ -179,6 +164,9 @@ Language: Objective-C</string>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSC-Bg-aQb">
                                                     <rect key="frame" x="56" y="147" width="129" height="30"/>
                                                     <state key="normal" title="Check in AppStore"/>
+                                                    <connections>
+                                                        <action selector="viewAppButton:" destination="9LQ-MF-IEB" eventType="touchUpInside" id="fV6-x8-H8t"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -366,7 +354,7 @@ Language: Swift</string>
                                                         <constraint firstAttribute="width" constant="90" id="VL5-sb-sr6"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matheus Frozzi Alberton" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR6-hh-gns">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matheus Frozzi Alberton" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR6-hh-gns">
                                                     <rect key="frame" x="8" y="37" width="486" height="25"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -437,7 +425,7 @@ Language: Swift</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqW-ej-4En" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="5"/>
+            <point key="canvasLocation" x="2828" y="602"/>
         </scene>
         <!--Who-->
         <scene sceneID="9SI-CR-deA">
@@ -465,6 +453,7 @@ Language: Swift</string>
         <image name="Ruim de Roda" width="60" height="60"/>
         <image name="The Chosen One" width="40" height="40"/>
         <image name="W" width="30" height="30"/>
+        <image name="arrow-down" width="30" height="30"/>
         <image name="arrow-right" width="30" height="30"/>
         <image name="profile-image" width="199" height="199"/>
     </resources>
