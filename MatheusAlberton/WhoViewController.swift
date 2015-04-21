@@ -45,8 +45,8 @@ class WhoViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         if(section == 0) {
             var header = HeaderDescription.instanceFromNib()
 
-            header.profileImage.layer.cornerRadius = header.profileImage.frame.size.width / 2;
-            header.profileImage.clipsToBounds = true;
+//            header.profileImage.layer.cornerRadius = header.profileImage.frame.size.width / 2;
+//            header.profileImage.clipsToBounds = true;
             
             return header
         } else {
@@ -98,13 +98,13 @@ class WhoViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 
         let color = getColorBySection(indexPath.section)
         cell.backgroundColor = color
-        
-        showButton(cell, Show: false, buttonName: "")
 
         if(indexPath.section == 1) {
             showButton(cell, Show: true, buttonName: "See more about me")
         } else if(indexPath.section == 8) {
             showButton(cell, Show: true, buttonName: "See my Apps")
+        } else {
+            showButton(cell, Show: false, buttonName: "")
         }
 
         return cell
@@ -183,7 +183,7 @@ class WhoViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
 
     func insertData() {
-        var header = ["Title":"Matheus Frozzi Alberton","Year":"","Description":"Love for development come in IT courses, where I met languages for web like HTML/CSS for front-end and PHP for the back-end.\nI started working with iOS since February 2015, when I had the first contact with the Objective-C and Swift also.\n I am participating in a development program for iOS.", "Icon":"", "newSkills": ""]
+        var header = ["Title":"Matheus Frozzi Alberton","Year":"","Description":"Love for development come in IT courses, where I met languages for web like HTML/CSS for front-end and PHP for the back-end.\nI started working with iOS since February 2015, when I had the first contact with the Objective-C and Swift.", "Icon":"profile-draw", "newSkills": ""]
         var one = ["Title":"Born","Year":"1992","Description":"Born in:\nPorto Alegre\nRio Grande do Sul\nBrazil", "Icon":"born-icon", "newSkills": ""]
         var two = ["Title":"Knowing Computer","Year":"2006","Description":"With age 14 start his first IT course, a basic course to students from neighborhood. Learning HTML using frontpage.", "Icon":"start_it", "newSkills": "HTML"]
         var three = ["Title":"Learning development","Year":"2009","Description":"Computer technician course that taught the basic concepts of programming with C and C ++, and assembly of computers, and to finish the course needed to make a dynamic site and an application in Delphi using MySQL.", "Icon":"it_real_90", "newSkills": "CSS\nPHP\nDelphi\nC/C++\nMySQL\nFireworks\nDreamweaver"]

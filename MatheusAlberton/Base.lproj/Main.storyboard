@@ -15,11 +15,11 @@
                         <viewControllerLayoutGuide type="bottom" id="be9-d0-aVe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="l1z-9U-T3x">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="373" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9SB-vc-04s">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="lifeCell" rowHeight="373" id="6Ld-Vh-j7a" customClass="LifeTableViewCell" customModule="MatheusAlberton" customModuleProvider="target">
@@ -113,7 +113,7 @@
                     <navigationItem key="navigationItem" id="cV7-zV-jzz"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="1200"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="tableView" destination="9SB-vc-04s" id="Xbz-bf-ptQ"/>
                         <segue destination="9LQ-MF-IEB" kind="show" identifier="myApps" id="bSi-t6-pEM"/>
@@ -122,14 +122,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXG-3M-dAR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="-745"/>
+            <point key="canvasLocation" x="2880" y="-745"/>
         </scene>
         <!--My Apps-->
         <scene sceneID="43V-vF-Ksb">
             <objects>
                 <tableViewController id="9LQ-MF-IEB" customClass="DevelopmentTableViewController" customModule="MatheusAlberton" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="2Be-Dk-oBA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
@@ -323,7 +323,7 @@ Language: Swift</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEN-g4-ns7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="-745"/>
+            <point key="canvasLocation" x="3640" y="-745"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="MCf-ds-eUN">
@@ -334,11 +334,11 @@ Language: Swift</string>
                         <viewControllerLayoutGuide type="bottom" id="6bf-ft-7GM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ayw-jA-Efe">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ngt-qw-SYw">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellTop" rowHeight="100" id="bfS-D3-Ree" customClass="ContactTableViewCell" customModule="MatheusAlberton" customModuleProvider="target">
@@ -425,13 +425,13 @@ Language: Swift</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqW-ej-4En" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="602"/>
+            <point key="canvasLocation" x="2880" y="14"/>
         </scene>
-        <!--Who-->
+        <!--Navigation Controller-->
         <scene sceneID="9SI-CR-deA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Prn-tk-GCK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Who" image="W" id="zK3-Gg-7l9"/>
+                    <tabBarItem key="tabBarItem" title="" id="zK3-Gg-7l9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NUr-dh-vpP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -444,15 +444,14 @@ Language: Swift</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UvY-Wc-HM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256" y="-745"/>
+            <point key="canvasLocation" x="2068" y="-745"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Flockr" width="60" height="60"/>
+        <image name="Flockr" width="120" height="120"/>
         <image name="Poop Check" width="40" height="40"/>
         <image name="Ruim de Roda" width="60" height="60"/>
         <image name="The Chosen One" width="40" height="40"/>
-        <image name="W" width="30" height="30"/>
         <image name="arrow-down" width="30" height="30"/>
         <image name="arrow-right" width="30" height="30"/>
         <image name="profile-image" width="199" height="199"/>

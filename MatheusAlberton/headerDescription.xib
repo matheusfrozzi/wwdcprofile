@@ -14,7 +14,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSm-Gf-yHj">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-image" translatesAutoresizingMaskIntoConstraints="NO" id="4KB-bb-Lhq">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-draw" translatesAutoresizingMaskIntoConstraints="NO" id="4KB-bb-Lhq">
                             <rect key="frame" x="260" y="-10" width="80" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="8dr-h4-YBO"/>
@@ -60,6 +60,6 @@
         </view>
     </objects>
     <resources>
-        <image name="profile-image" width="199" height="199"/>
+        <image name="profile-draw" width="80" height="80"/>
     </resources>
 </document>
