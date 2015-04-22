@@ -37,15 +37,8 @@
                                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-mP-2ce">
                                                     <rect key="frame" x="250" y="313" width="100" height="44"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-mK-KmI">
-                                                            <rect key="frame" x="72" y="12" width="20" height="20"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="20" id="XYM-3X-7cr"/>
-                                                                <constraint firstAttribute="width" secondItem="eNy-mK-KmI" secondAttribute="height" multiplier="1:1" id="wBC-hB-Edl"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrS-um-VM5">
-                                                            <rect key="frame" x="8" y="11" width="56" height="22"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrS-um-VM5">
+                                                            <rect key="frame" x="16" y="11" width="68" height="22"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -53,19 +46,17 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="centerY" secondItem="wrS-um-VM5" secondAttribute="centerY" constant="0.5" id="3w8-cB-AWf"/>
-                                                        <constraint firstAttribute="trailing" secondItem="eNy-mK-KmI" secondAttribute="trailing" constant="8" id="ERd-0g-1eu"/>
-                                                        <constraint firstItem="wrS-um-VM5" firstAttribute="leading" secondItem="vyR-mP-2ce" secondAttribute="leading" constant="8" id="I8n-wl-e4W"/>
+                                                        <constraint firstItem="wrS-um-VM5" firstAttribute="leading" secondItem="vyR-mP-2ce" secondAttribute="leading" constant="16" id="I8n-wl-e4W"/>
+                                                        <constraint firstAttribute="trailing" secondItem="wrS-um-VM5" secondAttribute="trailing" constant="16" id="MQS-1T-PFe"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Zyl-Q3-hdy"/>
                                                         <constraint firstAttribute="height" constant="44" id="adz-5M-HJJ"/>
-                                                        <constraint firstAttribute="centerY" secondItem="eNy-mK-KmI" secondAttribute="centerY" id="wFA-UK-xhG"/>
-                                                        <constraint firstItem="eNy-mK-KmI" firstAttribute="leading" secondItem="wrS-um-VM5" secondAttribute="trailing" constant="8" id="yDP-bf-Hwg"/>
                                                     </constraints>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="CIw-bu-UVA">
-                                                    <rect key="frame" x="285" y="319" width="30" height="30"/>
+                                                    <rect key="frame" x="290" y="329" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="CIw-bu-UVA" secondAttribute="height" multiplier="1:1" id="IvU-0P-MS9"/>
-                                                        <constraint firstAttribute="width" constant="30" id="i6A-Ah-OlJ"/>
+                                                        <constraint firstAttribute="width" constant="20" id="i6A-Ah-OlJ"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -88,7 +79,6 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="arrowButton" destination="eNy-mK-KmI" id="G0N-5s-fHz"/>
                                             <outlet property="arrowDown" destination="CIw-bu-UVA" id="2ex-wd-sUZ"/>
                                             <outlet property="descriptionLife" destination="7Gd-O9-cWO" id="B8p-sz-YKz"/>
                                             <outlet property="labelButton" destination="wrS-um-VM5" id="o5f-LF-1Xn"/>
@@ -452,8 +442,7 @@ Language: Swift</string>
         <image name="Poop Check" width="40" height="40"/>
         <image name="Ruim de Roda" width="60" height="60"/>
         <image name="The Chosen One" width="40" height="40"/>
-        <image name="arrow-down" width="30" height="30"/>
-        <image name="arrow-right" width="30" height="30"/>
+        <image name="arrow-down" width="20" height="20"/>
         <image name="profile-image" width="199" height="199"/>
     </resources>
     <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>

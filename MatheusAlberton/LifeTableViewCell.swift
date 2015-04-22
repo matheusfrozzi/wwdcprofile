@@ -13,7 +13,6 @@ class LifeTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLife: UILabel!
     @IBOutlet weak var labelButton: UILabel!
     @IBOutlet weak var viewButton: UIView!
-    @IBOutlet weak var arrowButton: UIImageView!
     @IBOutlet weak var arrowDown: UIImageView!
 
     override func awakeFromNib() {

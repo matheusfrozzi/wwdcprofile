@@ -44,9 +44,6 @@ class WhoViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?{
         if(section == 0) {
             var header = HeaderDescription.instanceFromNib()
-
-//            header.profileImage.layer.cornerRadius = header.profileImage.frame.size.width / 2;
-//            header.profileImage.clipsToBounds = true;
             
             return header
         } else {
@@ -183,16 +180,16 @@ class WhoViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
 
     func insertData() {
-        var header = ["Title":"Matheus Frozzi Alberton","Year":"","Description":"Love for development come in IT courses, where I met languages for web like HTML/CSS for front-end and PHP for the back-end.\nI started working with iOS since February 2015, when I had the first contact with the Objective-C and Swift.", "Icon":"profile-draw", "newSkills": ""]
+        var header = ["Title":"Matheus Frozzi Alberton","Year":"","Description":"Love for development come in IT courses, where I met languages for web like HTML/CSS/PHP where I started my life in development.\nI started working with iOS since February 2015, when I had the first contact with the Objective-C and Swift.", "Icon":"profile-draw", "newSkills": ""]
         var one = ["Title":"Born","Year":"1992","Description":"Born in:\nPorto Alegre\nRio Grande do Sul\nBrazil", "Icon":"born-icon", "newSkills": ""]
         var two = ["Title":"Knowing Computer","Year":"2006","Description":"With age 14 start his first IT course, a basic course to students from neighborhood. Learning HTML using frontpage.", "Icon":"start_it", "newSkills": "HTML"]
         var three = ["Title":"Learning development","Year":"2009","Description":"Computer technician course that taught the basic concepts of programming with C and C ++, and assembly of computers, and to finish the course needed to make a dynamic site and an application in Delphi using MySQL.", "Icon":"it_real_90", "newSkills": "CSS\nPHP\nDelphi\nC/C++\nMySQL\nFireworks\nDreamweaver"]
         var four = ["Title":"First Job","Year":"2010","Description":"In the middle 2010 got my first job, where worked as the only web developer of the company, as Front End and Back-End, worked in that company until early 2014.", "Icon":"job_1", "newSkills": "CMS\nExperience\nDashboard\nSublimeText\nPayment Gateway"]
-        var five = ["Title":"Web Specialization","Year":"2010","Description":"Course Teaches que best practices for web development, using OO programming with PHP. Ultimate goal of the course was to create a e-commerce.", "Icon":"web", "newSkills": "OOP\nCSS3\njQuery\nJavaScript"]
-        var six = ["Title":"College","Year":"2012","Description":"I am attending college to analysis and systems development to improve myself, where we learned a lot and I am applying the content I have been developing.", "Icon":"college", "newSkills": "Java\nPostgreSQL\nGame Thinking\nProject Management\nSoftware Engineering"]
-        var seven = ["Title":"Join in Madre","Year":"2014","Description": "Madre is a digital creative house that crafts amazing products, experiences & platforms, in this time in Madre, learn a lot about new features of Front-End an UI/UX, making some fresh e-commerce, one page sites and dashboards", "Icon":"creative", "newSkills": "UI/UX\nSilex\nAngularJS\nCodeIgniter\nMedia Query\nDesign Thinking"]
-        var eight = ["Title":"Working with iOS","Year":"2015","Description":"I started a course focused on developing applications for iOS called BEPiD, this course I have learned a lot about development and creativity, learned Objective-C earlier and now I'm working with Swift.", "Icon":"ios", "newSkills": "Swift\nXcode\nParse.com\nObjective-C"]
-        var nine = ["Title":"Conclusion","Year":"","Description":"Always loved development, making legal sites has always been something that I liked, I am now having the opportunity to develop Apps, and after 3 months of learning in iOS already published 1 App in the AppStore and 2 as Beta Test and more some ideas, and I think my love of developing this causing my fast learning. =)", "Icon":"ios", "newSkills": ""]
+        var five = ["Title":"Web Specialization","Year":"2010","Description":"Course Teaches best practices for web development, using OO programming with PHP. Objective final of the course was to create a e-commerce.", "Icon":"web", "newSkills": "OOP\nCSS3\njQuery\nJavaScript"]
+        var six = ["Title":"College","Year":"2012","Description":"I am attending college to analysis and systems development to improve myself, where I learned a lot and applying in my projects.", "Icon":"college", "newSkills": "Java\nPostgreSQL\nGame Thinking\nProject Management\nSoftware Engineering"]
+        var seven = ["Title":"Join in Madre","Year":"2014","Description": "Madre is a digital creative house that crafts amazing products, experiences & platforms, in this time in Madre, learn a lot about new features of Front-End and UI/UX, making some cool e-commerce, one page sites and dashboards", "Icon":"creative", "newSkills": "UI/UX\nSilex\nAngularJS\nCodeIgniter\nMedia Query\nDesign Thinking"]
+        var eight = ["Title":"Working with iOS","Year":"2015","Description":"I started a course focused on developing applications for iOS called BEPiD, in this course I learned a lot about development, creativity, Objective-C and Swift.", "Icon":"ios", "newSkills": "Swift\nXcode\nParse.com\nObjective-C"]
+        var nine = ["Title":"Conclusion","Year":"","Description":"Always loved development, making cool sites is something that I liked, now I have the opportunity to develop Apps, and after 3 months of learning iOS already published 1 App in the AppStore and 2 as Beta Test and more some ideas is in development, and I think my love of developing this causing my fast learning. =)", "Icon":"conclusion", "newSkills": ""]
 
         history = [header, one, two, three, four, five, six, seven, eight, nine]
     }
@@ -228,20 +225,18 @@ class WhoViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     func showButton(cell: LifeTableViewCell, Show: Bool, buttonName: String) {
         cell.viewButton.layer.cornerRadius = 6;
         cell.viewButton.clipsToBounds = true;
-        let bordercolor = UIColor(red: 219.0/255.0, green: 219.0/255.0, blue: 219.0/255.0, alpha: 1.0)
+        let bordercolor = UIColor.whiteColor()
         cell.viewButton.layer.borderColor = bordercolor.CGColor
-        cell.viewButton.layer.borderWidth = 0.9
+        cell.viewButton.layer.borderWidth = 1.7
 
         cell.labelButton.text = buttonName
 
         if(Show == true) {
             cell.viewButton.hidden = false
             cell.labelButton.hidden = false
-            cell.arrowButton.hidden = false
         } else {
             cell.viewButton.hidden = true
             cell.labelButton.hidden = true
-            cell.arrowButton.hidden = true
         }
     }
 
