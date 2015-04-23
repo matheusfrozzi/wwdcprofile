@@ -97,9 +97,9 @@ class WhoViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         cell.backgroundColor = color
 
         if(indexPath.section == 1) {
-            showButton(cell, Show: true, buttonName: "See more about me")
+            showButton(cell, Show: true, buttonName: "About me")
         } else if(indexPath.section == 8) {
-            showButton(cell, Show: true, buttonName: "See my Apps")
+            showButton(cell, Show: true, buttonName: "My apps")
         } else {
             showButton(cell, Show: false, buttonName: "")
         }
@@ -164,7 +164,7 @@ class WhoViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if(indexPath.section == 0 || indexPath.section == 1) {
+        if(indexPath.section == 1) {
             self.performSegueWithIdentifier("contactSegue", sender: self)
         } else if(indexPath.section == 8) {
             self.performSegueWithIdentifier("myApps", sender: self)
