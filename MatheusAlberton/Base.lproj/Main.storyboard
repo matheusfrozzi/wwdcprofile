@@ -202,7 +202,7 @@ Language: Objective-C</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-35-Yk9">
                                                     <rect key="frame" x="56" y="44" width="536" height="67"/>
-                                                    <string key="text">Flockr is a new way of comunication of pet lovers, it's as if your pet were in control, with flockr you can create profiles to each pet, and each one have their followers, activitys and follow who interest him, like the same pet breed.
+                                                    <string key="text">Flockr is a new way of comunication of pet lovers, it's like if your pet were in control, with flockr you can create profiles to each pet, and each one have their followers, activitys and follow who interest him, like the same pet breed.
 Language: Objective-C</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -240,7 +240,7 @@ Language: Objective-C</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZ3-L7-Mpk">
                                                     <rect key="frame" x="56" y="44" width="536" height="67"/>
-                                                    <string key="text">People are tired of reckless drivers? This app is for reporting traffic indiscretions. Cars parked in wave of poor or in a place prohibited for example. If you register your license plate can receive push notifications when reported.
+                                                    <string key="text">People are tired of reckless drivers? This app is for reporting traffic indiscretions. Cars parked in forbidden place for example. If you register your license plate, when someone report you, you can receive Push Notifications.
 Language: Objective-C</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -282,7 +282,7 @@ Language: Objective-C</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5S-L9-mvW">
                                                     <rect key="frame" x="56" y="44" width="536" height="50"/>
-                                                    <string key="text">Stomach problems? Do not know if this going to the bathroom to poop every day? This app will help control it. See map the locations you pooped.
+                                                    <string key="text">Stomach problems? Do not know if I'm going to the bathroom to poop every day? This app will help control it. See map of the locations you pooped.
 Language: Swift</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -329,7 +329,7 @@ Language: Swift</string>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ngt-qw-SYw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellTop" rowHeight="100" id="bfS-D3-Ree" customClass="ContactTableViewCell" customModule="MatheusAlberton" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -347,7 +347,7 @@ Language: Swift</string>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matheus Frozzi Alberton" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR6-hh-gns">
                                                     <rect key="frame" x="8" y="37" width="486" height="25"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -380,7 +380,7 @@ Language: Swift</string>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8H-jb-Okg">
                                                     <rect key="frame" x="46" y="18" width="546" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
